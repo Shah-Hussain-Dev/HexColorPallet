@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 20px auto;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: transparent;
+  border: 2px solid black;
+  color: white;
+}
+body {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(116, 18, 203, 1) 11.2%,
+    rgba(230, 46, 131, 1) 91.2%
+  );
+  font-family: "Poppins", sans-serif;
+}
+.box {
+  height: 140px;
+  width: 200px;
+  box-shadow: 0px 0px 10px black;
+  line-height: 140px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+  transition: 0.3s linear all;
+  text-shadow: 0px 0px 5px black;
+  cursor: pointer;
+}
+.box:focus {
+  transform: scale(1.1, 1.1);
+}
+.box:hover {
+  transform: scale(1.1, 1.1);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 20px;
+}
+
+::selection {
+  color: yellow;
+  transform: scale(1.1, 1.1);
+  height: 40px;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  height: 80px;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(249, 57, 170, 1) 9.8%,
+    rgba(134, 176, 255, 1) 94.9%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px black;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  padding: 10px;
+}
+nav h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+@media only screen and (max-width: 400px) {
+  nav h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+}
